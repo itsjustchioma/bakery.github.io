@@ -1,0 +1,10 @@
+bakery = palette 
+store = gallery
+cakes = random
+cake slices = explore 
+cookies = people 
+cupcakes= buildings
+doughnut = plant 
+pastry = culinary 
+about = about 
+your account = your account 

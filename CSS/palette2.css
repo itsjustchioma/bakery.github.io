@@ -1,0 +1,227 @@
+    /* FOR THE IMAGES  */
+    /* @import url('https://fonts.googleapis.com/css?family=Maven+Pro'); */
+    
+    .xop-section {
+        font-family: 'SimSun', sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        /* margin: 0 0 4em; */
+        margin: 0 auto;
+        width: 75%;
+        /* background-color: black; */
+    }
+    
+    .project {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        margin: 1em 0;
+        cursor: pointer;
+        /* background-color: black; */
+        background-color: #1B1F22;
+    }
+    
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .project figure img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 300px;
+    }
+    
+    .project figcaption {
+        padding: 1em;
+        background: black;
+        color: #fff;
+    }
+    
+    .project h3 {
+        color: white;
+        margin: 0;
+        font-size: 30px;
+    }
+    /* edited edited edited  */
+    
+    .cta {
+        margin: .5em 0;
+        font-size: 20px;
+        /* border: 2px white; */
+        border: 2px solid grey;
+        display: inline-block;
+        width: 200px;
+        /* position: fixed; */
+        /* font-weight: 100px; */
+        border-radius: 0px 11px 0px 11px;
+    }
+    
+    .cta:after {
+        content: '\f061';
+        font-family: "SimSun";
+        /* display: inline-flex; */
+        margin: 0 0 .5em .5em;
+    }
+    /* starts here  */
+    
+    .ctaa {
+        margin: .5em 0;
+        font-size: 20px;
+        /* border: 2px white; */
+        /* border: 2px solid grey;
+        display: inline-block;
+        width: 200px; */
+        /* position: fixed; */
+        /* font-weight: 100px; */
+    }
+    
+    .ctaa:after {
+        content: '\f061';
+        font-family: "SimSun";
+        /* display: inline-flex; */
+        margin: 0 0 .5em .5em;
+    }
+    /*
+
+When the browser is 960px or larger.
+
+*/
+    
+    @media screen and (min-width: 960px) {
+        .xop-wrapper {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .xop-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+        }
+        /* .project:nth-child(1) {
+grid-column: 1 / span 3; */
+        /* } */
+        .project {
+            width: 100%;
+            height: 300px;
+            text-decoration: none;
+            margin: 0;
+            /* opacity: 0.2; */
+        }
+        .project figure {
+            position: relative;
+            overflow: hidden;
+        }
+        .project figure img {
+            position: relative;
+            z-index: 999;
+            transition: transform 0.4s;
+        }
+        .project figure:hover img {
+            transform: translateY(-100px);
+        }
+        .project figcaption {
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            padding: 20px;
+            height: 90px;
+            width: 100%;
+            background: transparent;
+        }
+ 
+        @media screen and (max-width: 500px) {
+            .logo {
+                font-size: 100px;
+            }
+            .acct {
+                font-size: 100px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .typewriter p {
+            font-size: 15px;
+        }
+        .acct h1{
+            margin-left: 10px;
+            font-size: 80px;
+        }      
+
+    }
+    
+    @media screen and (max-width: 900px) {
+        .logo {
+            font-size: 90px;
+        }
+        .acct h1{
+            font-size: 120px;
+            margin-left: 170px;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        .acct h1{
+            font-size: 120px;
+            margin-left: 230px;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        .acct h1{
+            font-size: 100px;
+            margin-left: 120px;
+        }
+    }
+    
+    @media screen and (max-width: 420px) {
+        .cake h1 {
+            font-size: 60px;
+        }
+        .cupc h1 {
+            font-size: 60px;
+        }
+        .dough h1 {
+            font-size: 60px;
+        }
+        .past h1 {
+            font-size: 60px;
+        }
+        .acct h1{
+            margin-left: 25px;
+        }
+        .typewriter p{
+            font-size: 15px;
+        }
+    }
+    
+    @media screen and (max-width: 322px) {
+        .cake h1 {
+            font-size: 50px;
+        }
+        .cta {
+            width: 150px;
+        }
+        div .logo {
+            font-size: 50px;
+        }
+    }
+    
+    @media screen and (max-width: 281px) {
+        .cooki h1 {
+            font-size: 70px;
+        }
+        .dough h1 {
+            font-size: 40px;
+        }
+        .past h1 {
+            font-size: 50px;
+        }
+        .cta {
+            width: 100px;
+        }
+        div .logo {
+            font-size: 50px;
+        }
+    }
